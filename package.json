@@ -1,0 +1,17 @@
+{
+  "name": "lit_move_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "moch deden",
+  "license": "ISC",
+  "dependencies": {
+    "file-type": "^5.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
+}
