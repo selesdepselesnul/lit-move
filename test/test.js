@@ -1,8 +1,14 @@
-var assert = require('assert');
+var expect = require('chai').expect;
 describe('Array', function() {
+  before(function() {
+    console.log('test');
+  });
+
   describe('#indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      assert.equal(-1, [1,2,3].indexOf(4));
+    context('when present', function() {
+      it('should return the index where the element first appears in the array', function() {
+        expect(2).to.equal(2);
+      });
     });
   });
 });
