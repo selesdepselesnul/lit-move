@@ -2,8 +2,8 @@ var expect = require('chai').expect;
 var lilMove = require('../lilmove');
 var mock = require('mock-fs');
 
-
 describe('lilmove', function() {
+
   before(function() {
     mock({
       './a.png': new Buffer([8, 6, 7, 5, 3, 0, 9]),
@@ -22,4 +22,21 @@ describe('lilmove', function() {
       });
     });
   });
+
+  describe('#move()', function() {
+    context('when present', function() {
+      it('should return files element', function() {
+        expect(lilMove.listFiles()).to.deep.equal({
+          'png': ['a.png', 'b.png'],
+          'txt': ['a.txt']
+        });
+      });
+    });
+  });
+
+
+  after(function() {
+    mock.restore();
+  });
+
 });
