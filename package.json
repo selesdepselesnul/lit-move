@@ -9,6 +9,7 @@
   "author": "moch deden",
   "license": "ISC",
   "dependencies": {
+    "file-extension": "^3.1.2",
     "file-type": "^5.2.0",
     "lodash": "^4.17.4",
     "read-chunk": "^2.0.0"

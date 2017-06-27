@@ -15,16 +15,10 @@ describe('lilmove', function() {
   describe('#listFiles()', function() {
     context('when present', function() {
       it('should return files element', function() {
-        expect(lilMove.listFiles()).to.deep.equal([
-          {
-            'items': ['a.txt'],
-            'type': 'txt'
-          },
-          {
-            'items': ['a.png', 'b.png'],
-            'type': 'png'
-          }
-        ]);
+        expect(lilMove.listFiles()).to.deep.equal({
+          'png': ['a.png', 'b.png'],
+          'txt': ['a.txt']
+        });
       });
     });
   });
