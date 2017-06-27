@@ -1,9 +1,15 @@
 var expect = require('chai').expect;
 var lilMove = require('../lilmove');
 var mock = require('mock-fs');
+
+
 describe('lilmove', function() {
   before(function() {
-    console.log('test');
+    mock({
+      './a.png': new Buffer([8, 6, 7, 5, 3, 0, 9]),
+      './a.txt' : 'fasfasf',
+      './b.png': new Buffer([8, 6, 7, 5, 3, 0, 20])
+    });
   });
 
   describe('#listFiles()', function() {
