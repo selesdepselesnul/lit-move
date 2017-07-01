@@ -1,10 +1,10 @@
 const expect = require('chai').expect;
-const lilMove = require('../lilmove');
+const lilMove = require('../litmove');
 const mock = require('mock-fs');
 const mv = require('mv');
 const fs = require('fs');
 
-describe('lilmove', function() {
+describe('litmove', function() {
 
   describe('#listFiles()', function() {
     context('when present', function() {
