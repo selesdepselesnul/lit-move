@@ -1,5 +1,5 @@
 {
-  "name": "lit_move_api",
+  "name": "litmove",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -7,7 +7,7 @@
     "test": "mocha"
   },
   "author": "moch deden",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "file-extension": "^3.1.2",
     "lodash": "^4.17.4",
