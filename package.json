@@ -2,7 +2,7 @@
   "name": "litmove",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "litmove.js",
   "scripts": {
     "test": "mocha"
   },
